@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         //if(Input.GetMouseButtonDown(0) && canJump)
         if (Input.GetKey(KeyCode.Space) && canJump)
+        if(Input.GetKey(KeyCode.Space))
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
@@ -46,5 +47,4 @@ public class PlayerController : MonoBehaviour
             canJump= false;
         }
     }
-
 }
