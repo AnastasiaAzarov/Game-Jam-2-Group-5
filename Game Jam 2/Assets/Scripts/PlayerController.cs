@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "Obstacle") 
         {
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
