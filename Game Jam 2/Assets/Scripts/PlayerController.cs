@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public AudioSource jump;
     Rigidbody rb;
     public float jumpForce;
     bool canJump;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && canJump)
         if(Input.GetKey(KeyCode.Space))
         {
+            jump.Play();
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
         }
