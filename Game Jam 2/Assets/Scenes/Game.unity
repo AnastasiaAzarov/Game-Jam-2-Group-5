@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.067819566, g: 0.27394518, b: 0.48464394, a: 1}
+  m_IndirectSpecularColor: {r: 0.06781944, g: 0.27394506, b: 0.484644, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -182,7 +182,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Click button above to play
 
-    Press SPACE to jump'
+    Press SPACE to jump
+
+    Click to shoot'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -739,7 +741,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &1028405508
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -870,7 +872,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jump: {fileID: 1328665753}
   jumpForce: 4
-
 --- !u!1001 &1117726429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -943,7 +944,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1444758572}
   m_SourcePrefab: {fileID: 100100000, guid: 1b4f2b1191d354a95b02e3b4b4e57e4d, type: 3}
-
 --- !u!224 &1165452001 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1820744843555791238, guid: 05a7e98b299eb11469ad830f50ee8e7b, type: 3}
