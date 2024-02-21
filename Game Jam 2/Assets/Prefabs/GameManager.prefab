@@ -45,7 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle: {fileID: 5303808772430467756, guid: ff16f703713b81c4d8971b76e62a397c, type: 3}
+  monster: {fileID: 3855207503497421992, guid: 67ee658720b1a44ce8da07eb355855d0, type: 3}
   spawnPoint: {fileID: 0}
+  score: 0
   scoreText: {fileID: 0}
   playButton: {fileID: 0}
   player: {fileID: 0}

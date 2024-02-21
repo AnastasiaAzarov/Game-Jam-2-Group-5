@@ -6,6 +6,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public GameObject obstacle;
+    public GameObject monster;
     public Transform spawnPoint;
     public int score = 0;
     
@@ -36,7 +37,17 @@ public class GameManager : MonoBehaviour
             Instantiate(obstacle, spawnPoint.position, Quaternion.identity);
         }
     }
+    IEnumerator SpawnMonster()
+    {
+        while (true)
+        {
+            float waitTime = Random.Range(0.4f, 12f);
 
+            yield return new WaitForSeconds(waitTime);
+
+            Instantiate(monster, spawnPoint.position, Quaternion.identity);
+        }
+    }
     void ScoreUp()
     {
         score++;
@@ -49,6 +60,7 @@ public class GameManager : MonoBehaviour
         playButton.SetActive(false);
 
         StartCoroutine("SpawnObstacles");
+        StartCoroutine("SpawnMonster");
         InvokeRepeating("ScoreUp", 2f, 1f);
     }
 
