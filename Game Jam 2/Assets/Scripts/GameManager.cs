@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     {
         while (true)
         {
-            float waitTime = Random.Range(0.5f, 4f);
+            float waitTime = Random.Range(0.5f, 8f);
 
             yield return new WaitForSeconds(waitTime);
 

@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 1622507964017600557}
   - component: {fileID: 3356964152656991015}
   - component: {fileID: 6202739262259513105}
-  - component: {fileID: 5042439024341301792}
   - component: {fileID: 7924981628236206636}
   m_Layer: 0
   m_Name: monster
@@ -34,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.065509796, y: 2.0735898, z: 17.28}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5.4438953, y: 1.8076, z: 1.0534}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -104,7 +103,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -138,8 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 186d71510a4d04f06a16eab5ba940d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 30
-  maxHealth: 30
+  Health: 0
+  maxHealth: 100
 --- !u!195 &6202739262259513105
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -162,33 +161,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!54 &5042439024341301792
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3855207503497421992}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7924981628236206636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,4 +173,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730e07f00c0ea804c87a22c9fbded67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: -90
