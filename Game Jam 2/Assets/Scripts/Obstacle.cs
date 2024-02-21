@@ -17,7 +17,16 @@ public class Obstacle : MonoBehaviour
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
     }
-    private void OnBecameInvisible()
+
+    private void OnCollisionEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            Destroy(gameObject);
+        }
+    }
+
+        private void OnBecameInvisible()
     {
         Destroy(gameObject);
     }

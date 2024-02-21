@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -64,5 +65,9 @@ public class GameManager : MonoBehaviour
         InvokeRepeating("ScoreUp", 2f, 1f);
     }
 
-
+    public void RestartGame()
+    {
+        score = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); // loads current scene
+    }
 }
